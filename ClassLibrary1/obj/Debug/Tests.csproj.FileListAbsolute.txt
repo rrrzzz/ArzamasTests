@@ -1,0 +1,9 @@
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\nunit.framework.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\TestFramework.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\TestFramework.pdb
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\bin\Debug\nunit.framework.xml
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
