@@ -1,0 +1,9 @@
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\TestFramework.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\TestFramework.pdb
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\WebDriver.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\WebDriver.Support.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\WebDriver.xml
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\bin\Debug\WebDriver.Support.xml
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.dll
+c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.pdb
