@@ -7,3 +7,12 @@ c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramw
 c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache
 c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.dll
 c:\users\талия\documents\visual studio 2015\Projects\TestFramwork\TestFramwork\obj\Debug\TestFramework.pdb
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\TestFramework.dll
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\TestFramework.pdb
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\WebDriver.dll
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\WebDriver.Support.dll
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\WebDriver.xml
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\bin\Debug\WebDriver.Support.xml
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.csprojResolveAssemblyReference.cache
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.dll
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\TestFramework\obj\Debug\TestFramework.pdb

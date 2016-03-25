@@ -13,6 +13,13 @@ namespace Tests
     [TestFixture]
     public class Tests
     {
+        [TearDown]
+        public void CloseBrowser()
+        {
+            Browser.Close();
+        }
+        
+
         [Test]
         public void CheckHomePage()
         {
