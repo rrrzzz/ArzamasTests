@@ -21,10 +21,19 @@ namespace Tests
         
 
         [Test]
-        public void CheckHomePage()
+        public void CheckHomePageLinkAndTitle()
         {
-            Pages.HomePage.GoTo();
-            Assert.IsTrue(Pages.HomePage.IsAt());
+            HomePage.GoTo();
+            Assert.IsTrue(HomePage.IsAt());
+        }
+
+        [Test]
+        public void CheckAuthorPage()
+        {
+            HomePage.GoTo();
+            Page.Footer.AuthorsClick();
+            AuthorsPage.ClickAny();
+            Assert.IsTrue(AuthorsPage.ChosenAuthor.AtAuthorPage());
         }
     }
 }
