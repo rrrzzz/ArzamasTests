@@ -33,7 +33,14 @@ namespace Tests
             HomePage.GoTo();
             Page.Footer.AuthorsClick();
             AuthorsPage.ClickAny();
-            Assert.IsTrue(AuthorsPage.ChosenAuthor.AtAuthorPage());
+            Assert.IsTrue(Author.AtAuthorPage());
+        }
+
+        [Test]
+        public void CheckAllAuthors()
+        {
+            AuthorsPage.GoTo();
+            Assert.IsTrue(AuthorsPage.CheckAllAuthors());
         }
     }
 }
