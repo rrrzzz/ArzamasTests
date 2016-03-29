@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using TestFramework;
 
 
@@ -16,7 +11,7 @@ namespace Tests
         [TearDown]
         public void CloseBrowser()
         {
-            Browser.Close();
+            Browser.Quit();
         }
         
         [Test]
@@ -32,7 +27,7 @@ namespace Tests
             Pages.HomePage.GoTo();
             Pages.Footer.AuthorsClick();
             Pages.AuthorsPage.ClickAny();
-            Assert.IsTrue(Pages.Author.AtAuthorPage());
+            Assert.IsTrue(Pages.Author.IsAt());
         }
 
         [Test]
