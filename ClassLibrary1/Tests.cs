@@ -19,28 +19,27 @@ namespace Tests
             Browser.Close();
         }
         
-
         [Test]
         public void CheckHomePageLinkAndTitle()
         {
-            HomePage.GoTo();
-            Assert.IsTrue(HomePage.IsAt());
+            Pages.HomePage.GoTo();
+            Assert.IsTrue(Pages.HomePage.IsAt());
         }
 
         [Test]
         public void CheckAuthorPage()
         {
-            HomePage.GoTo();
-            Page.Footer.AuthorsClick();
-            AuthorsPage.ClickAny();
-            Assert.IsTrue(Author.AtAuthorPage());
+            Pages.HomePage.GoTo();
+            Pages.Footer.AuthorsClick();
+            Pages.AuthorsPage.ClickAny();
+            Assert.IsTrue(Pages.Author.AtAuthorPage());
         }
 
         [Test]
         public void CheckAllAuthors()
         {
-            AuthorsPage.GoTo();
-            Assert.IsTrue(AuthorsPage.CheckAllAuthors());
+            Pages.AuthorsPage.GoTo();
+            Assert.IsTrue(Pages.AuthorsPage.CheckAllAuthors());
         }
     }
 }

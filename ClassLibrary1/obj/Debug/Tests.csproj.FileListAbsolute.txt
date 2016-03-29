@@ -18,3 +18,5 @@ C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLib
 C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLibrary1\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLibrary1\bin\Debug\WebDriver.Support.dll
+C:\Users\Талия\Documents\Visual Studio 2015\Projects\TestFramework\ClassLibrary1\bin\Debug\WebDriver.Support.xml
