@@ -49,17 +49,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutPage.cs" />
     <Compile Include="AuthorPage.cs" />
     <Compile Include="AuthorsPage.cs" />
     <Compile Include="Browser.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="ContactPage.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Footer.cs" />
     <Compile Include="Header.cs" />
     <Compile Include="HomePage.cs" />
+    <Compile Include="HowToPage.cs" />
+    <Compile Include="LicensePage.cs" />
     <Compile Include="PageBase.cs" />
     <Compile Include="Pages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeamPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

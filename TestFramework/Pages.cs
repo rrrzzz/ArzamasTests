@@ -46,5 +46,76 @@ namespace TestFramework
                 return _author;
             }
         }
+
+        private static AboutPage _aboutPage;
+        public static AboutPage AboutPage
+        {
+            get
+            {
+                if (_aboutPage == null)
+                {
+                    _aboutPage = new AboutPage();
+                }
+                PageFactory.InitElements(Browser.Driver, _aboutPage);
+                return _aboutPage;
+            }
+        }
+
+        private static LicensePage _licensePage;
+        public static LicensePage LicensePage
+        {
+            get
+            {
+                if (_licensePage == null)
+                {
+                    _licensePage = new LicensePage();
+                }
+                PageFactory.InitElements(Browser.Driver, _licensePage);
+                return _licensePage;
+            }
+        }
+
+        private static HowToPage _howToPage;
+        public static HowToPage HowToPage
+        {
+            get
+            {
+                if (_howToPage == null)
+                {
+                    _howToPage = new HowToPage();
+                }
+                PageFactory.InitElements(Browser.Driver, _howToPage);
+                return _howToPage;
+            } 
+            
+        }
+
+        private static TeamPage _teamPage;
+        public static TeamPage TeamPage
+        {
+            get
+            {
+                if (_teamPage == null)
+                {
+                    _teamPage = new TeamPage();
+                }
+                PageFactory.InitElements(Browser.Driver, _teamPage);
+                return _teamPage;
+            }
+        }
+
+        private static ContactPage _contactPage;
+        public static ContactPage ContactPage
+        {
+            get
+            {
+                if (_contactPage == null)
+                {
+                    _contactPage = new ContactPage();
+                }
+                PageFactory.InitElements(Browser.Driver, _contactPage);
+                return _contactPage;
+            }
+        }
     }
 }

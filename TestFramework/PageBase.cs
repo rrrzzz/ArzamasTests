@@ -10,18 +10,18 @@ namespace TestFramework
     {
         private string _host;
         private string _relativeUrl;
-        private string _fullUrl;
+        protected string FullUrl;
 
         protected PageBase(string host, string relativeUrl)
         {
             _host = host;
             _relativeUrl = relativeUrl;
-            _fullUrl = _host + _relativeUrl;
+            FullUrl = _host + _relativeUrl;
         }
 
         public void GoTo()
         {
-            Browser.GoTo(_fullUrl);
+            Browser.GoTo(FullUrl);
         }
 
         public abstract bool IsAt();

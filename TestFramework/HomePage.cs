@@ -9,9 +9,6 @@ namespace TestFramework
         {
         }
 
-        public override bool IsAt()
-        {
-            return Browser.Title == Title;
-        }
+        public override bool IsAt() => Browser.Title == Title;
     }
 }

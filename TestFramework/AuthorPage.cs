@@ -15,9 +15,6 @@ namespace TestFramework
         {
         }
 
-        public override bool IsAt()
-        {
-            return Name == Pages.AuthorsPage.NameInLink && TitleName == Name;
-        }
+        public override bool IsAt() => Name == Pages.AuthorsPage.NameInLink && TitleName == Name;
     }
 }
