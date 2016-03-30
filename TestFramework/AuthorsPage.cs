@@ -23,7 +23,7 @@ namespace TestFramework
         {
         }
 
-        public void ClickAny()
+        public void ClickAnyAuthor()
         {
             var rand = new Random();
             _authorLink = _allAuthors[rand.Next(_allAuthors.Count)];
