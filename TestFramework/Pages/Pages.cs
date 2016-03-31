@@ -84,7 +84,7 @@ namespace TestFramework
                 {
                     _howToPage = new HowToPage();
                 }
-                PageFactory.InitElements(Browser.Driver, _howToPage);
+                
                 return _howToPage;
             } 
             

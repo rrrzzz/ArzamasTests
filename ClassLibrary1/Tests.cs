@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Threading;
+using NUnit.Framework;
 using TestFramework;
 
 
@@ -8,6 +9,12 @@ namespace Tests
     [TestFixture]
     public class Tests
     {
+        [SetUp]
+        public void OpenBrowser()
+        {
+            Browser.Start();
+        }
+
         [TearDown]
         public void CloseBrowser()
         {
@@ -84,6 +91,24 @@ namespace Tests
             Pages.ContactPage.FillForm();
             Pages.ContactPage.Submit();
             Assert.IsTrue(Pages.ContactPage.IsFormSubmitted());
+        }
+
+        [Test]
+        public void SubscriptionInvalidEmail()
+        {
+            Pages.HomePage.GoTo();
+            Pages.Footer.FillEmailForm();
+            Pages.Footer.SubmitEmailForm();
+            Assert.IsTrue(Pages.Footer.IsErrorMessageShown());
+        }
+
+        [Test]
+        public void SubscriptionValidEmail()
+        {
+            Pages.HomePage.GoTo();
+            Pages.Footer.FillEmailForm("kalandrill@yahoo.com");
+            Pages.Footer.SubmitEmailForm();
+            Assert.IsTrue(Pages.Footer.IsEmailSubscriptionSuccessful());
         }
     }
 }

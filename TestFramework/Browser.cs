@@ -5,8 +5,13 @@ namespace TestFramework
 {
     public static class Browser
     {
-        public static IWebDriver Driver { get; } = new ChromeDriver(@"C:\Libraries");
+        public static IWebDriver Driver { get; private set; } 
         public static string Title => Driver.Title;
+
+        public static void Start()
+        {
+            Driver = new ChromeDriver(@"C:\Libraries");
+        }
 
         public static void GoTo(string url)
         {
