@@ -62,7 +62,7 @@
     <Compile Include="Pages\AuthorPage.cs" />
     <Compile Include="Pages\AuthorsPage.cs" />
     <Compile Include="Browser.cs" />
-    <Compile Include="Pages\Constants.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Pages\ContactPage.cs" />
     <Compile Include="Exceptions.cs" />
     <Compile Include="Footer.cs" />
