@@ -7,7 +7,7 @@ using TestFramework;
 namespace Tests
 {
     [TestFixture]
-    public class Tests
+    public class BrowserTests
     {
         [SetUp]
         public void OpenBrowser()
@@ -109,6 +109,28 @@ namespace Tests
             Pages.Footer.FillEmailForm("kalandrill@yahoo.com");
             Pages.Footer.SubmitEmailForm();
             Assert.IsTrue(Pages.Footer.IsEmailSubscriptionSuccessful());
+        }
+    }
+
+    [TestFixture]
+    public class ApiTests
+    {
+        [Test]
+        public void ApiValidEmailSubscription()
+        {
+            Assert.IsTrue(Api.IsEmailSubscriptionSuccessful());
+        }
+
+        [Test]
+        public void ApiInvalidEmailSubscription()
+        {
+            Assert.IsFalse(Api.IsEmailSubscriptionSuccessful("asdasd@asd"));
+        }
+
+        [Test]
+        public void ApiInvalidFeedback()
+        {
+            Assert.IsTrue(Api.IsFeedbackError());
         }
     }
 }
