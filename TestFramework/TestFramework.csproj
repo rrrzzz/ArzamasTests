@@ -49,22 +49,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutPage.cs" />
-    <Compile Include="AuthorPage.cs" />
-    <Compile Include="AuthorsPage.cs" />
+    <Compile Include="Pages\AboutPage.cs" />
+    <Compile Include="Api.cs" />
+    <Compile Include="Pages\AuthorPage.cs" />
+    <Compile Include="Pages\AuthorsPage.cs" />
     <Compile Include="Browser.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="ContactPage.cs" />
-    <Compile Include="Exceptions.cs" />
+    <Compile Include="Pages\Constants.cs" />
+    <Compile Include="Pages\ContactPage.cs" />
+    <Compile Include="Pages\Exceptions.cs" />
     <Compile Include="Footer.cs" />
-    <Compile Include="Header.cs" />
-    <Compile Include="HomePage.cs" />
-    <Compile Include="HowToPage.cs" />
-    <Compile Include="LicensePage.cs" />
-    <Compile Include="PageBase.cs" />
-    <Compile Include="Pages.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\HowToPage.cs" />
+    <Compile Include="Pages\LicensePage.cs" />
+    <Compile Include="Pages\PageBase.cs" />
+    <Compile Include="Pages\Pages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeamPage.cs" />
+    <Compile Include="Pages\TeamPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
