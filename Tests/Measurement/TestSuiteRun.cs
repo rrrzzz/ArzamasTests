@@ -22,8 +22,8 @@ namespace Tests
         public void Add(TestExecution execution)
         {
             Executions.Add(execution);
-            TotalTime += execution.TimeResult;
-            switch (execution.TestResult)
+            TotalTime += execution.ExecutionTime;
+            switch (execution.Result)
             {
                 case "Failed":
                     Failed++;

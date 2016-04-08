@@ -7,6 +7,7 @@ using System.Runtime.Remoting.Channels;
 using System.Security.Permissions;
 using NLog;
 using NUnit.Framework;
+using Tests.Database;
 
 namespace Tests
 {
@@ -14,13 +15,9 @@ namespace Tests
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
 
-        private static void Main(string[] args)
-        {
-            RunAndGetTestStats();
-        }
-
         public static void RunAndGetTestStats()
         {
+            var testsRepository = new TestsRepository();
             var testSuiteRun = new TestSuiteRun(DateTime.UtcNow);
             var testAssembly = Assembly.GetCallingAssembly();
             var types = testAssembly.GetTypes().Where(x => x.Name != "TestMeasure" &&
@@ -31,7 +28,7 @@ namespace Tests
                 ExtractAndInvokeTests(type, testSuiteRun);
             }
 
-
+            testsRepository.Add(testSuiteRun);
         }
 
         private static void ExtractAndInvokeTests(Type type, TestSuiteRun suiteRun)
@@ -62,7 +59,7 @@ namespace Tests
                     if (ex.InnerException.GetType().Name == "AssertionException")
                     {
                         testResult = "Failed";
-                        testComment = ex.InnerException.Message;
+                        testComment = ex.InnerException.Message.Trim();
                     }
                     else
                     {

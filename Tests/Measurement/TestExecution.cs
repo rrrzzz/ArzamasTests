@@ -5,18 +5,18 @@ namespace Tests
     public class TestExecution
     {
         public string Fixture { get; }
-        public string TestName { get; }
-        public string TestComment { get; }
-        public string TestResult { get; }
-        public TimeSpan TimeResult { get; }
+        public string Name { get; }
+        public string Comment { get; }
+        public string Result { get; }
+        public TimeSpan ExecutionTime { get; }
 
-        public TestExecution(string fixture, string testName, string testResult, string testComment, TimeSpan timeResult)
+        public TestExecution(string fixture, string name, string result, string comment, TimeSpan executionTime)
         {
             Fixture = fixture; 
-            TestName = testName;
-            TestResult = testResult;
-            TestComment = testComment;
-            TimeResult = timeResult;
+            Name = name;
+            Result = result;
+            Comment = comment;
+            ExecutionTime = executionTime;
         }
     }
 }
