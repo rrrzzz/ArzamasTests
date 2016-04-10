@@ -18,7 +18,7 @@ namespace Tests
         public static void RunAndGetTestStats()
         {
             var testsRepository = new TestsRepository();
-            var testSuiteRun = new TestSuiteRun(DateTime.UtcNow);
+            var testSuiteRun = new TestSuiteRun { StartTime = DateTime.UtcNow};
             var testAssembly = Assembly.GetCallingAssembly();
             var types = testAssembly.GetTypes().Where(x => x.Name != "TestMeasure" &&
                                                            x.GetCustomAttributes(typeof(TestFixtureAttribute), false).Any());
@@ -80,7 +80,7 @@ namespace Tests
                 logger.Info($"Test: {method.Name}\nfrom Fixture: {type.Name}\nhas run with result: {testResult}; comment: {testComment}" +
                                   $"\nin {timeResult.Hours} hours, {timeResult.Minutes} minutes, {timeResult.Seconds} seconds and {timeResult.Milliseconds} milliseconds");
 
-                var testExecution = new TestExecution(type.Name, method.Name, testResult, testComment, timeResult);
+                var testExecution = new TestExecution { Fixture = type.Name, Name = method.Name, Result = testResult, Description = testComment, ExecutionTime = timeResult };
                 suiteRun.Add(testExecution);
             }
         }
