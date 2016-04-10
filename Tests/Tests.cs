@@ -1,18 +1,18 @@
 ﻿using NUnit.Framework;
-using NUnit.Framework.Interfaces;
 using TestFramework;
 
 
 
 namespace Tests
 {
+
     [TestFixture]
     public class TestMeasure
     {
         [Test]
         public static void MeasureTests()
         {
-            Measurement.RunAndGetTestStats();
+            Measurement.Measurement.RunAndGetTestStats();
         }
     }
 

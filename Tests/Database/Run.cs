@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Tests
 {
-    public class TestSuiteRun
+    public class Run
     {
         public int ID { get; set; }
         public List<TestExecution> Executions { get; set; }
@@ -14,7 +14,7 @@ namespace Tests
         public int Uncompleted { get;  set; }
         public int TotalNumberOfTests { get; set; }
 
-        public TestSuiteRun()
+        public Run()
         {
            Executions = new List<TestExecution>();
         }

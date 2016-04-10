@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.Remoting.Channels;
-using System.Security.Permissions;
 using NLog;
 using NUnit.Framework;
 using Tests.Database;
 
-namespace Tests
+namespace Tests.Measurement
 {
     public static class Measurement
     {
@@ -17,8 +15,8 @@ namespace Tests
 
         public static void RunAndGetTestStats()
         {
-            var testsRepository = new TestsRepository();
-            var testSuiteRun = new TestSuiteRun { StartTime = DateTime.UtcNow};
+            var testsRepository = new EfTestsRepository();
+            var testSuiteRun = new Run { StartTime = DateTime.UtcNow};
             var testAssembly = Assembly.GetCallingAssembly();
             var types = testAssembly.GetTypes().Where(x => x.Name != "TestMeasure" &&
                                                            x.GetCustomAttributes(typeof(TestFixtureAttribute), false).Any());
@@ -31,7 +29,7 @@ namespace Tests
             testsRepository.Add(testSuiteRun);
         }
 
-        private static void ExtractAndInvokeTests(Type type, TestSuiteRun suiteRun)
+        private static void ExtractAndInvokeTests(Type type, Run suiteRun)
         {
             var instance = Activator.CreateInstance(type);
             var methods = type.GetMethods();

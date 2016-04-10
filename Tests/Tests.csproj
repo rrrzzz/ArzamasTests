@@ -64,14 +64,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Constants.cs" />
+    <Compile Include="Database\DapperTestsRepository.cs" />
     <Compile Include="Database\ITestStatsRepository.cs" />
-    <Compile Include="Database\TestsRepository.cs" />
+    <Compile Include="Database\EFTestsRepository.cs" />
     <Compile Include="Database\TestStatsContext.cs" />
     <Compile Include="Measurement\Measurement.cs" />
     <Compile Include="Database\TestExecution.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Database\TestSuiteRun.cs" />
+    <Compile Include="Database\Run.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

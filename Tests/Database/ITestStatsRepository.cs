@@ -8,6 +8,6 @@ namespace Tests.Database
 {
     public interface ITestStatsRepository
     {
-        void Add(TestSuiteRun run);
+        void Add(Run run);
     }
 }

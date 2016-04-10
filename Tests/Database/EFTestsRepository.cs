@@ -1,13 +1,8 @@
-﻿using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
-using Dapper;
-
-namespace Tests.Database
+﻿namespace Tests.Database
 {
-    public class TestsRepository : ITestStatsRepository
+    public class EfTestsRepository : ITestStatsRepository
     {
-       public void Add(TestSuiteRun run)
+       public void Add(Run run)
         {
             using (var dbContext = new TestStatsContext())
             {
