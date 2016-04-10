@@ -5,24 +5,25 @@ namespace Tests
 {
     public class TestSuiteRun
     {
+        public int ID { get; set; }
         public List<TestExecution> Executions { get; set; }
-        public DateTime StarTimeUtc { get; }
-        public TimeSpan TotalTime { get; private set; }
-        public int Passed { get; private set; }
-        public int Failed { get; private set; } 
-        public int Uncompleted { get; private set; }
-        public int TotalTests => Executions.Count;
+        public DateTime StartTime { get; set; }
+        public TimeSpan RunningTime { get;  set; }
+        public int Passed { get;  set; }
+        public int Failed { get;  set; } 
+        public int Uncompleted { get;  set; }
+        public int TotalNumberOfTests { get; set; }
 
-        public TestSuiteRun(DateTime utcNow)
+        public TestSuiteRun()
         {
-            StarTimeUtc = utcNow;
-            Executions = new List<TestExecution>();
+           Executions = new List<TestExecution>();
         }
 
         public void Add(TestExecution execution)
         {
             Executions.Add(execution);
-            TotalTime += execution.ExecutionTime;
+            TotalNumberOfTests++;
+            RunningTime += execution.ExecutionTime;
             switch (execution.Result)
             {
                 case "Failed":
