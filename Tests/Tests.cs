@@ -5,7 +5,6 @@ using TestFramework;
 
 namespace Tests
 {
-
     [TestFixture]
     public class TestMeasure
     {
