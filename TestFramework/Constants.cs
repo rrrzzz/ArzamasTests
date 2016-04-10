@@ -6,6 +6,5 @@ namespace TestFramework
         public const string ApiHost = "http://api.arzamas.academy";
         public const string Subscriptions = "api/subscriptions";
         public const string Feedback = "api/feedback";
-		public const string Test = "test";
     }
 }
